@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #section {
+            height: 500px;
+            border: 1px solid black;
+            background-image: url(img/sea-7705679_1280.jpg);
+            background-repeat: no-repeat;
+            background-size: contain; /* 이미지가 잘리지 않도록 하고, 남는 공간은 비움 */
+            background-size: cover; /* 축소하고 확대할 때 빈 공간없이 다 채우고, 이미지를 자른다 */
+        }
+
+        #mid {
+            height: 580px;
+            border: 1px solid black;
+            background-image: url(img/sea-7705679_1280.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* scroll 기본값, fixed는 뒷배경 고정 */
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+    <section id="section"></section>
+
+    <section id="mid"></section>
+
+    <section style="height: 1000px;"></section>
+</html>

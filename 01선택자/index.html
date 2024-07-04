@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css"> <!-- 적용순서 : 인라인 -> 내부 -> 외부 -->
+
+    <style>
+        h3 {color :blue;} 
+    </style>
+</head>
+<body>
+    <!--
+        주석단추키
+        alt + shift + a
+        ctrl + /
+        
+        블럭태그 안에는 블럭과 인라인을 사용할 수 있음
+        블럭태그는 전체 영역을 가지고 자동으로 줄바꿈이 된다-
+    
+        인라인태그는 자식으로 인라인만 가질 수 있음
+        인라인태그는 태그영역을 크기로 가지게 되고, 가로 배치된다 
+
+        모든 태그는 id속성과 class속성을 가질 수 있다
+        둘 다 디자인을 적용할 때 주로 사용함
+
+        - id는 화면에서도 고유하다 (#)
+        - class는 중복 가능하며, 여러 이름을 가질 수 있다 (.)
+    -->
+    <h3>블록태그</h3>
+
+    <h3 style="color : #ffff00;">블록태그</h3>
+    <p>블록태그</p>
+    
+    <a href="">인라인</a>
+    <img src="" alt="인라인">
+</body>
+</html>

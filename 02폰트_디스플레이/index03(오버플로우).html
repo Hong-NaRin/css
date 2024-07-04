@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text-box {
+            border: 2px solid #98c1d9;
+            height: 100px; /* 박스의 크기와 넓이 */
+            width: 300px;
+            overflow: visible; /* 기본값 */
+            overflow: hidden; /* 넘치는 영역을 숨겨줌 */
+            overflow: scroll; /* 글씨가 박스 크기를 넘치면 스크롤을 생성해줌 */
+            overflow: auto;  /* 텍스트 양에 따라서 위 옵션 중 자동 설정 */
+        }
+
+        .table-box {
+            border: 1px solid #3d5a80;
+            height: 100px;
+            width: 300px;
+            overflow: auto; /* x축으로 스크롤을 자동으로 생성해줌 */
+            white-space: nowrap; /* 가로 줄바꿈 방지 */
+
+       }
+    </style>
+</head>
+<body>
+    <p class="text-box">푸른하늘처럼 투명하게새벽공기처럼 청아하게 언제나 파란 희망으로 다가서는 너에게 나는 그런 사람이고 싶다
+         들판에 핀 작은 풀꽃같이바람에 날리는 어여쁜 민들레같이잔잔한 미소와 작은 행복을 주는 사람 너에게 나는 그런 사람이고 싶다
+         따스한 햇살이 되어시린 가슴으로 아파할 때 포근하게 감싸주며 위로가 되는 사람 너에게 나는 그런 사람이고 싶다 
+        긴 인생여정에 정다운 벗되어꼭 사랑이 아니여도 꼭 가슴이 뜨겁지 않아도 어깨동무하며 서로의 온기를 나누는 사람 너에게 나는 그런 사람이 되고 싶다
+         가장 힘들때 생각나는 사람가장 기쁠때 보고싶은 사람가장 외로울때 그리운 사람 너에게 나는 그런 한사람이고 싶다. 
+    </p>
+    <div class="table-box">
+        <table border="1">
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+        </table>    
+    </div>
+</body>
+</html>

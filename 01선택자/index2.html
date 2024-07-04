@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {}  /* 세부 디자인 시작 전에, 전체 디자인 지정할 때 */
+        b {color: red;}
+        ul, li, ol, dl, dd {list-style : none;} /* 한 번에 지정할 때 콤마 사용 */
+
+        #a1 {color: orange;}
+        .a2 {color: palevioletred;}
+
+        .box p {color: skyblue;} /* 클래스 box의 자식 p태그 */
+        .box > p {color: purple;} /* 클래스 box의 직계자식 p태그 */
+
+        .wrap > input[name=aaa] {color: gray;} /* input[속성=값] -> wrap 안의 name 값이 aaa인 것 */
+
+        /* 가상선택자 - 태그에 동작이 일어날 때 (선택자 뒤에 :을 찍음) */
+        b:active {color: powderblue;} /* action을 사용하여 b는 태그선택자를 누르면 색상이 바뀜 */
+        ul > li:hover {color:aquamarine;} /* hover를 사용하여 클릭하면 색상이 바뀜 */
+        input[name=aaa]:focus {border: 3px solid yellowgreen; outline:none;} /* 네모칸을 선택하면 색상이 바뀜  */
+    </style>
+</body>
+
+    <b>b는 태그선택자</b>
+    <b>b는 태그선택자</b>
+
+    <ul>
+        <li>콤마선택</li>
+        <li>콤마선택</li>
+    </ul>
+
+    <p id = "a1">아이디 선택자</p> <!-- 아이디는 고유함 -->
+    <p class="a2">클래스 선택자</p> <!-- 클래스는 중복 가능 -->
+    <p class="a2">클래스 선택자</p>
+
+    <div class="box">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+
+        <ul>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+        </ul>
+    </div>
+
+    <div class="wrap">
+        <input type="text" name="aaa">
+        <input type="text" name="bbb">
+    </div>
+</html>
