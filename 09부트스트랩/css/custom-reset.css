@@ -13,12 +13,17 @@ body, html {
 ul, li, ol, dl, dd {list-style: none;}
 img {max-width: 100%; height: auto;}
 
+/* 부트스트랩의 기본 인풋디자인 변경 */
+.form-control {border-radius: 0;}
+.form-control:focus {border-color: #ccc; box-shadow: none;}
+.btn {border-radius: 0;}
+
 /* 
     input, select 등 기본 디자인을 가지고 있지만 
     직접 디자인 하는 경우는 브라우저별로 기본 디자인을 지우고 커스터마이징  
 */
 
-input[type=checkbox], inpux[type=radio] {
+/* input[type=checkbox], input[type=radio] {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -30,4 +35,4 @@ input[type=checkbox]:checked,
 input[type=radio]:checked {
     outline: none;
     background-color: blanchedalmond;
-}
+} */
