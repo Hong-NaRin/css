@@ -5,86 +5,101 @@
     <meta httli-equiv="X-UA-Comliatible" content="IE=edge">
     <meta name="viewliort" content="width=device-width, initial-scale=1.0">
     <title>미니게시판</title>
-    <link rel="stylesheet" href="css/mini.css">
     
+    <!-- 부트스트랩 css링크 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- 제이쿼리(부스트랩보다 먼저 링크) -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- 부트스트랩 js링크 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/mini.css">
 </head>
 <body>
-    <h3>미니게시판 전체보기</h3>
+    <div class="top">
+        <button type="button" class="btn_round">미니게시판 전체보기</button>
+    </div>
+
     <nav>
         <div id="mini">
-            <div class="list_box">
-                <div class="section">
-                    <h3> 연예 
-                        <span class="list_num">()</span>
-                        <button type="button" class="btn btn_list"></button>
-                    </h3>    
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">뉴진스</a></li>
-                            <li><a href="#">에스파</a></li>
-                            <li><a href="#">태연</a></li>
-                            <li><a href="#">아이들</a></li>
-                            <li><a href="#">이영지</a></li>
-                        </ul>
-                    </div>
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">뉴진스</a></li>
-                            <li><a href="#">에스파</a></li>
-                            <li><a href="#">태연</a></li>
-                            <li><a href="#">아이들</a></li>
-                            <li><a href="#">이영지</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="list_box">
-                <div class="section">
-                    <h3>게임
-                        <span class="list_num">()</span>
-                        <button type="button" class="btn btn_list"></button>
-                    </h3>    
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">피파</a></li>
-                            <li><a href="#">롤</a></li>
-                            <li><a href="#">오버워치</a></li>
-                            <li><a href="#">서든어택</a></li>
-                            <li><a href="#">메이플</a></li>
-                        </ul>
-                    </div>
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">피파</a></li>
-                            <li><a href="#">롤</a></li>
-                            <li><a href="#">오버워치</a></li>
-                            <li><a href="#">서든어택</a></li>
-                            <li><a href="#">메이플</a></li>
-                        </ul>
+            <div id="mini_wrap" class="mini_listwrap"></div>
+                <div class="list_box">
+                    <div class="section">
+                        <h3 class="title"> 연예
+                            <span class="list_num">()</span>
+                            <button type="button" class="btn btn_list">
+                                <span class="glyphicon glyphicon-collapse-down"></span>
+                            </button>
+                        </h3>    
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">뉴진스</a></li>
+                                <li><a href="#">에스파</a></li>
+                                <li><a href="#">태연</a></li>
+                                <li><a href="#">아이들</a></li>
+                                <li><a href="#">이영지</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">뉴진스</a></li>
+                                <li><a href="#">에스파</a></li>
+                                <li><a href="#">태연</a></li>
+                                <li><a href="#">아이들</a></li>
+                                <li><a href="#">이영지</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="list_box">
-                <div class="section">
-                    <h3>취미
-                        <span class="list_num">()</span>
-                        <button type="button" class="btn btn_list"></button>
-                    </h3>    
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">넷플릭스</a></li>
-                            <li><a href="#">소설</a></li>
-                            <li><a href="#">이세계아이돌</a></li>
-                            <li><a href="#">필름카메라</a></li>
-                        </ul>
+                <div class="list_box">
+                    <div class="section">
+                        <h3 class="title">게임
+                            <span class="list_num">()</span>
+                            <button type="button" class="btn btn_list"></button>
+                        </h3>    
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">피파</a></li>
+                                <li><a href="#">롤</a></li>
+                                <li><a href="#">오버워치</a></li>
+                                <li><a href="#">서든어택</a></li>
+                                <li><a href="#">메이플</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">피파</a></li>
+                                <li><a href="#">롤</a></li>
+                                <li><a href="#">오버워치</a></li>
+                                <li><a href="#">서든어택</a></li>
+                                <li><a href="#">메이플</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">넷플릭스</a></li>
-                            <li><a href="#">소설</a></li>
-                            <li><a href="#">이세계아이돌</a></li>
-                            <li><a href="#">필름카메라</a></li>
-                        </ul>
+                </div>
+                <div class="list_box">
+                    <div class="section">
+                        <h3 class="title">취미
+                            <span class="list_num">()</span>
+                            <button type="button" class="btn btn_list"></button>
+                        </h3>    
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">넷플릭스</a></li>
+                                <li><a href="#">소설</a></li>
+                                <li><a href="#">이세계아이돌</a></li>
+                                <li><a href="#">필름카메라</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">넷플릭스</a></li>
+                                <li><a href="#">소설</a></li>
+                                <li><a href="#">이세계아이돌</a></li>
+                                <li><a href="#">필름카메라</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

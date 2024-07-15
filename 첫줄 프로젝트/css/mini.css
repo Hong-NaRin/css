@@ -38,19 +38,86 @@ html, body {
 * {
     padding: 0;
     margin: 0;
-    font-size: 15px;
 }
+
+body {width: 1440px; margin: 0 auto;}
 
 ul, li {
     list-style: none;
     text-decoration: none;
 }
 
-nav {border: 1px solid grey; } 
-nav > #mini > .listbox > section > h3 {border: 1px solid black;}
+/* #mini > .list {border: 1px solid #FFFFFF; background-color: #e3e3e3; width: 100%;} */
 
-#mini > .list {border: 1px solid #FFFFFF; background-color: #e3e3e3; width: 100%;}
-/* nav .content li  {display: inline-block; } */
-nav ul li a {text-decoration: none; display: block; color: #222;}
-nav ul li a:hover {text-decoration: underline; } 
+.btn_round {
+    background-color: #00AFB9; 
+    border-color: #00AFB9; 
+    border-radius: 10px; 
+    color: #FFFFFF; 
+    font-size: 13px;
+    padding: 0 15px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none;
+    
+}
+
+nav {border: 1px solid #999; margin-top: 15px; border-top: 0px;}
+
+.mini_listwrap {border-top: 3px solid #00AFB9;}
+
+
+.title {
+    overflow: hidden; 
+    border-top: 2px solid #00AFB9; 
+    line-height: 25px; 
+    border-bottom: 1px solid #999; 
+    background-color:#f9f7f3;
+}
+.title > .list_num {color: #999; font-weight: normal; font-size: 12px; vertical-align: top;}
+.title button {vertical-align: top; cursor: pointer; background: transparent; display: inline-block; float: right;}
+h3 { font-size: 15px; font-weight: bold; padding: 5px; margin: 0px; }
+
+.list_box {border-collapse: collapse;}
+
+.list {
+    display: inline-block; 
+    height: 300px; 
+    border-right: 1px solid #999; 
+    width: 14.2857%; 
+}
+.list ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: calc(100% / 6);
+    padding: 9px 10px 15px;
+    box-sizing: border-box;
+}
+
+.list ul li {
+    line-height: 25px;
+    height: calc(100% / 6);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.list ul li a {
+    font-size: 13px;
+    padding: 5px;
+    color: #222; 
+    font-family:'NanumBareunGothicLight', sans-serif;
+    text-decoration: none; 
+    display: inline-block;
+    white-space: nowrap; 
+}
+.list ul li a:hover {text-decoration: underline; } 
+
 
