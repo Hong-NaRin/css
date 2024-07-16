@@ -35,6 +35,7 @@ html, body {
     font-family: 'NanumBareunGothicUltraLight';
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -46,111 +47,3 @@ ul, li {
     list-style: none;
     text-decoration: none;
 }
-
-
-.btn_round {
-    background-color: #00AFB9; 
-    border-color: #00AFB9; 
-    border-radius: 10px; 
-    color: #FFFFFF; 
-    font-size: 13px;
-    padding: 0 15px;
-    height: 25px;
-    text-align: center;
-    display: inline-block;
-    box-sizing: border-box;
-    outline: none;
-    box-shadow: none;
-    
-}
-
-nav {border: 1px solid #999; margin-top: 15px; border-top: 0px; border-left: 0px;}
-
-.mini_listwrap {border-top: 3px solid #00AFB9;}
-
-
-.title {
-    overflow: hidden; 
-    border-top: 2px solid #00AFB9; 
-    line-height: 25px; 
-    border-bottom: 1px solid #999; 
-    border-left: 1px solid #999;
-    background-color:#f8f9fa;
-    background-color:#f7fff7;
-    /* background-color:#d5f1f4; */
-    /* background-color:#f9f7f3; */
-    font-size: 15px; 
-    font-weight: bold; 
-    padding: 5px; 
-    margin: 0px;
-}
-
-.title > .list_num {color: #999; font-weight: normal; font-size: 12px; vertical-align: top;}
-.title > button {
-    vertical-align: top; 
-    cursor: pointer; 
-    background: transparent; 
-    display: inline-block; 
-    float: right;
-    color: #00AFB9;
-    padding: 6px 12px; 
-    text-align: center;
-    
-}
-
-.btn_list:active:focus, .btn_list:focus {
-    outline: none;
-    outline-offset: 0px;
-}
-
-.btn_list:focus, .btn_list:focus, .btn_list:hover {
-    text-decoration: none;
-    color: #00AFB9;
-}
-
-.title > button:hover {
-    box-sizing: border-box;
-    color: #00AFB9;
-} 
-
-.list_box {border-collapse: collapse; }
-
-.list {
-    display: inline-block; 
-    height: 540px; 
-    border-left: 1px solid #999; 
-    width: 202.71px;
-
-}
-
-.list ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    /* width: calc(100% / 6); */
-    box-sizing: border-box;
-    margin: 10px 10px;
-
-}
-
-.list ul li {
-    line-height: 5%;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: 0 atuo;
-    padding: 10px;
-    margin-top: 3px;
-}
-
-
-.list ul li a {
-    font-size: 11px;
-    color: #222; 
-    font-family:'NanumBareunGothicLight', sans-serif;
-    text-decoration: none; 
-    display: inline-block;
-    white-space: nowrap; 
-}
-.list ul li a:hover {text-decoration: underline; } 
-
