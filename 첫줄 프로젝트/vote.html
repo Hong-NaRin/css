@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>꼬담꼬담</title>
+    <!-- 부트스트랩 css링크 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- 제이쿼리(부스트랩보다 먼저 링크) -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- 부트스트랩 js링크 -->
+    <script src="js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/vote.css">
 </head>
 <body>
-    <div class="top">
-        <ul>
-            <li><a href="목록">개설신청</a></li>
-            <li><a href="게시판 전체보기">전체 카테고리</a></li>
-        </ul>
-    </div>
-
     <div class="wrap">
-        <div class="title">
-            <h3>플레이브 하민 카테고리 신설 요청합니다</h3>
-            <p>11일 전 | 조회 111 | 7</p>
+        <div class="top">
+            <ul class="top_text">
+                <li><a href="목록"><span class="glyphicon glyphicon-flag"></span> 개설신청</a></li>
+                <li><a href="게시판 전체보기"><span class="glyphicon glyphicon-list"></span> 전체 카테고리</a></li>
+            </ul>
         </div>
+
+        <hr>
+        <div class="title">
+            <h3 class="bold">뉴진스 카테고리 신설 요청합니다</h3>
+            <p>11일 전 | 조회 111 | <span class="glyphicon glyphicon-thumbs-up"></span>7</p>
+            <button type="button" class="title_right"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+            <button type="button" class="title_right">새 글(write)</button>
+            
+        </div>
+
+        <hr>
         <div class="content">
             <div class="box">
-                <p>투표 전 반드시 확인!</p>
+                <p class="bold">투표 전 반드시 확인!</p>
                 <p>1. 모든 신설 요청에 대해 1개월 내 한 번만 투표 가능하므로 꼭 필요한 경우에만 작성해 주세요.</p>
                 <p>2. 비회원은 투표에 참여할 수 없습니다.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>뉴진스 카테고리를 만드시는 걸 찬성하시겠습니까?</h4>
+            <div class="grid">
+                <div class="option" id="yes" onclick="submitVote('yes')">
+                    <p>Yes</p>
+                    <p class="percentage" id="percentageYes">0%</p>
+                </div>
+                <div class="option" id="no" onclick="submitVote('no')">
+                    <p>No</p>
+                    <p class="percentage" id="percentageNo">0%</p>
+                </div>
             </div>
         </div>
     </div>
